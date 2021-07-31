@@ -15,7 +15,7 @@ namespace AutoPaint
         private readonly float _brightnessTrigger = 0.5f;
 
         // The amount of time the program will wait before taking control of your mouse.
-        private readonly TimeSpan _delay = TimeSpan.FromSeconds(3);
+        private readonly TimeSpan _delay = TimeSpan.FromSeconds(5);
 
         private Point _previousPos;
 
