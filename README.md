@@ -23,4 +23,5 @@ Here's a collection of results while using the application.
 <img src="drawings/Crewmate.png" alt="Crewmate" width="250"/>
 <img src="drawings/Mona%20Lisa.png" alt="Mona Lisa" width="250"/>
 <img src="drawings/Pawn.png" alt="Pawn" width="250"/>
+<img src="drawings/Pain.png" alt="Pain" width="250"/>
 <img src="drawings/Taiga.png" alt="Taiga" width="250"/>
