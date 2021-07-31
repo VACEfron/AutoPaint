@@ -1,5 +1,7 @@
 .vs/
 obj/
+Release/
+Debug/
 Properties/
 
 *.user
