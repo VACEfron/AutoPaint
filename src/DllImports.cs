@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
+﻿using System.Drawing;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutoPaint
 {
@@ -27,7 +22,7 @@ namespace AutoPaint
             mouse_event(_leftMouseDown, x, y, 0, 0);
             SetCursorPos(x + xOffset, y + yOffset);
 
-            if (nextPixel == default || nextPixel.GetBrightness() > brightnessTrigger)
+            if (nextPixel == default || (nextPixel.GetBrightness() is float brightness && (invert ? brightness <= brightnessTrigger : brightness > brightnessTrigger)) || nextPixel.A < 225)
                 mouse_event(_leftMouseUp, x + xOffset, y + yOffset, 0, 0);
         }
 

@@ -49,8 +49,8 @@ namespace AutoPaint
 
                     Color pixel = bitmap.GetPixel(x, y);
 
-                    if (pixel.GetBrightness() <= _brightnessTrigger)
-                        DllImports.LeftMouseClick(bitmap, x, y, _xOffset, _yOffset, _brightnessTrigger);
+                    if (pixel.GetBrightness() is float brightness && (_invert ? brightness > _brightnessTrigger : brightness <= _brightnessTrigger) && pixel.A >= 225)
+                        DllImports.LeftMouseClick(bitmap, x, y, _xOffset, _yOffset, _brightnessTrigger, _invert);
 
                     DllImports.SetCursorPos(x + _xOffset, y + _yOffset);
 
