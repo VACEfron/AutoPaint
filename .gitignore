@@ -1,0 +1,6 @@
+.vs/
+obj/
+Properties/
+
+*.user
+*pdb
