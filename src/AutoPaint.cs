@@ -9,6 +9,8 @@ namespace AutoPaint
         private readonly int _xOffset = 30;
         private readonly int _yOffset = 200;
         
+        private bool _invert;
+
         // Float between 0-1 for at what brightness per pixel a mouse click will be triggered. 0 is 0%, 1 is 100%.
         private readonly float _brightnessTrigger = 0.5f;
 
@@ -19,6 +21,23 @@ namespace AutoPaint
 
         public void Start()
         {
+            while (true)
+            {
+                Console.Write("Invert colors? [y/n]: ");
+                string input = Console.ReadLine().ToLower();
+
+                if (input == "y")
+                {
+                    _invert = true;
+                    break;
+                }
+                else if (input == "n")
+                {
+                    _invert = false;
+                    break;
+                }
+            }
+
             Console.WriteLine("Press any key to start countdown.");
             Console.ReadKey(true);
 

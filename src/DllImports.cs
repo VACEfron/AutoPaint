@@ -14,9 +14,9 @@ namespace AutoPaint
             return lpPoint;
         }
 
-        public static void LeftMouseClick(Bitmap bitmap, int x, int y, int xOffset, int yOffset, float brightnessTrigger)
+        public static void LeftMouseClick(Bitmap bitmap, int x, int y, int xOffset, int yOffset, float brightnessTrigger, bool invert)
         {
-            Color nextPixel = x < bitmap.Width && y < bitmap.Height ? bitmap.GetPixel(x, y + 1) : default;
+            Color nextPixel = x < bitmap.Width && y < bitmap.Height - 1 ? bitmap.GetPixel(x, y + 1) : default;
 
             SetCursorPos(x + xOffset, y + yOffset);
             mouse_event(_leftMouseDown, x, y, 0, 0);
