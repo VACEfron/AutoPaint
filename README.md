@@ -9,7 +9,7 @@ Since it uses your cursor, you won't be able to really do anything while the pro
 
 ## How to use
 1. Clone the repo.
-2. Position MS Paint to the top left of your screen [like this](https://user-images.githubusercontent.com/46462862/127742196-d41aecee-f61a-48c9-b19d-37436569fa30.png) and make sure the pencil/brush is selected.
+2. Position MS Paint to the top left of your screen [like this](https://user-images.githubusercontent.com/46462862/127742196-d41aecee-f61a-48c9-b19d-37436569fa30.png) and make sure the pencil/brush is selected with the size of one pixel.
 3. Navigate to `src/bin/build` and run the application.
 4. Make sure the application is not overlapping with MS Paint at the top left area of your screen and follow its instructions.
 
