@@ -80,6 +80,7 @@ namespace AutoPaint
             }
 
             Console.WriteLine("Done. How did it turn out?");
+            Console.ReadLine();
         }
 
         private void ActivateDelay(bool continuing)
